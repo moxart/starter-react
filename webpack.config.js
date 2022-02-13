@@ -39,7 +39,11 @@ module.exports = {
       },
     ],
   },
-  
+
+  resolve: {
+    extensions: ['', '.js', '.jsx'],
+  },
+
   plugins: [
     new HTMLWebpackPlugin({
       template: "index.html"

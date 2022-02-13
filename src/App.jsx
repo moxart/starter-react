@@ -1,8 +1,10 @@
 import React from 'react'
 
+import HelloWorld from './components/HelloWorld'
+
 const App = () => {
     return (
-        <h1>Hello World!</h1>
+        <HelloWorld />
     )
 }
 
