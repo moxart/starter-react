@@ -1,11 +1,13 @@
 import React from "react";
-import ReactDom from "react-dom";
+import ReactDOM from 'react-dom/client';
 
-// import "bootstrap/dist/css/bootstrap.min.css";
 import "./assets/scss/main.scss";
 
 import App from "./app/App";
 
-ReactDom.render(<App />, document.getElementById("root"));
+const container = document.getElementById("root");
+const root = ReactDOM.createRoot(container);
+
+root.render(<App />);
 
 module.hot.accept();
